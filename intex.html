@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="indexport.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- navbar -->
+        <nav>
+            <!-- logo -->
+            <img width="200px" height="150px" class="logo"
+                src="data:image/png;base64,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"
+                alt="logo">
+            <!-- links -->
+            <ul>
+                <li class="listItems"><a class="links" href="#home">HOME</a></li>
+                <li class="listItems"><a class="links" href="#about">ABOUT ME</a></li>
+                <li class="listItems"><a class="links" href="#skill">SKILLS</a></li>
+                <li class="listItems"><a class="links" href="#contact">CONTACT ME</a></li>
+            </ul>
+            <!-- pseudo class: used to define a spcl state of an element syntax= selector:pseudo class-->
+        </nav>
+        <!-- home -->
+        <section id="home">
+            <div class="homeContent">
+                <h1 class="animate__animated animate__rubberBand" id="username">I'm <span id="lname">Evin joju</span>
+                </h1>
+                <p id="userDetails">This is my official portfolio website to describe all <br>
+                    Details and work experience in Web Development</p>
+                <a id="download" href="./Abel Resume.docx" download>DOWNLOAD CV</a>
+            </div>
+            <div class="homeImages">
+                <!-- shape -->
+                <img src="./wshape-removebg-preview.png" alt="shape" id="shape" class="group1">
+                <!-- girl -->
+                <img src="./agent-removebg-preview.png" alt="girl" id="girl" class="group1">
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about">
+            <div class="sectionHead">
+                <h2 class="mainHead">About Me</h2>
+                <span class="subHead">Introduction</span>
+            </div>
+            <div class="aboutBody">
+                <!-- grid: used to display elements in row and column, where user can fix the column width
+                     grid container: display as grid , grid-template:column / row : used to set width
+                     grid items:  -->
+                <div data-aos="fade-right" class="aboutImage">
+                    <img class="img1"
+                        src="https://as2.ftcdn.net/v2/jpg/08/06/02/41/1000_F_806024161_0u1cCGrh4yOSe8vjdvnHHC5C5XpoVREh.jpg"
+                        alt="about me">
+                </div>
+                <div class="aboutContent">
+                    <p>Hello! Evin joju, a passionate Web developer with a Btech degree in Computer Science and
+                        Engineering from KTU. I thrive on creating innovative solutions and continuously strive to
+                        enhance my skills and knowledge in the tech world. My journey in technology has been driven by a
+                        deep curiosity and a love for problem-solving. I enjoy working on projects that challenge me to
+                        think creatively and push the boundaries of what’s possible. In my free time, I explore new
+                        technologies and stay updated with the latest industry trends.</p>
+                    <div class="informations">
+                        <div class="infoBox">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Evin joju</span>
+                        </div>
+                        <div class="infoBox">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>7909298056</span>
+                        </div>
+                        <div class="infoBox">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>evinjoju777@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- skilss -->
+        <section id="skill">
+            <div class="sectionHead">
+                <h2 class="mainHead">Skills</h2>
+                <span class="subHead">My Skills</span>
+            </div>
+            <div class="skillContent">
+                <div class="progressBars">
+                    <!-- html bars -->
+                    <div class="bars">
+                        <h3 class="barHead">HTML</h3>
+                        <span class="barPercent">92%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar htmlBar"></div>
+                    </div>
+                    <!-- css bars -->
+                    <div class="bars">
+                        <h3 class="barHead">CSS</h3>
+                        <span class="barPercent">90%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar htmlBar"></div>
+                    </div>
+                    <!-- js bars -->
+                    <div class="bars">
+                        <h3 class="barHead">JS</h3>
+                        <span class="barPercent">86%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar htmlBar"></div>
+                    </div>
+                    <!-- react bars -->
+                    <div class="bars">
+                        <h3 class="barHead">REACT</h3>
+                        <span class="barPercent">83%</span>
+                        <div class="baseBar"></div>
+                        <div class="baseBar htmlBar"></div>
+                    </div>
+                </div>
+                <div class="skillImage">
+                    <img class="mySkill"
+                        src="https://cdn.dribbble.com/userupload/5414647/file/original-27d955135c22a97062f61c94a2421d4f.png?resize=400x300&vertical=center"
+                        alt="skill">
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section id="contact">
+            <div class="sectionHead">
+                <h2 class="mainHead">Contacts</h2>
+                <span class="subHead"> My Contacts</span>
+            </div>
+            <div class="iconCollection">
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin-in brands"></i></a>
+                </div>
+
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+                </div>
+
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+                </div>
+
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-whatsapp brands"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook brands"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+                </div>
+            </div>
+
+        </section>
+        <!-- footer -->
+        <footer>
+            <p id="copyright">@ my portfolio website -july 2024,All rights Reserved to &reg; evin joju </p>
+            <div class="icon upArrow brands">
+                <a href="#container"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+    </div>
+    </footer>
+    </div>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
+
+
+</html>
